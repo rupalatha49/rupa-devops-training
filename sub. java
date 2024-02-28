@@ -1,12 +1,31 @@
+<<<<<<< Updated upstream
+=======
+import java.util.Scanner;
+
+>>>>>>> Stashed changes
 public class Subtraction {
     // Static variables to hold the numbers
     private static int num1;
     private static int num2;
 
+<<<<<<< Updated upstream
     // Method to set the values of num1 and num2
     public static void setNumbers(int n1, int n2) {
         num1 = n1;
         num2 = n2;
+=======
+    // Method to set the values of num1 and num2 using Scanner
+    public static void setNumbers() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        num1 = scanner.nextInt();
+
+        System.out.print("Enter the second number: ");
+        num2 = scanner.nextInt();
+
+        scanner.close();
+>>>>>>> Stashed changes
     }
 
     // Method to perform subtraction and return the result
@@ -15,8 +34,13 @@ public class Subtraction {
     }
 
     public static void main(String[] args) {
+<<<<<<< Updated upstream
         // Setting the numbers directly
         setNumbers(20, 7);
+=======
+        // Setting the numbers using Scanner
+        setNumbers();
+>>>>>>> Stashed changes
 
         // Performing subtraction
         int result = subtract();
