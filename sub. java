@@ -1,0 +1,27 @@
+public class Subtraction {
+    // Static variables to hold the numbers
+    private static int num1;
+    private static int num2;
+
+    // Method to set the values of num1 and num2
+    public static void setNumbers(int n1, int n2) {
+        num1 = n1;
+        num2 = n2;
+    }
+
+    // Method to perform subtraction and return the result
+    public static int subtract() {
+        return num1 - num2;
+    }
+
+    public static void main(String[] args) {
+        // Setting the numbers directly
+        setNumbers(20, 7);
+
+        // Performing subtraction
+        int result = subtract();
+
+        // Displaying the result
+        System.out.println("Result of subtraction: " + result);
+    }
+}
